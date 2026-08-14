@@ -131,6 +131,7 @@ export default function ProductDetailPage() {
                     width={420}
                     height={420}
                     priority
+                    loading="eager"
                     className="w-full h-full object-contain filter drop-shadow-[0_20px_25px_rgba(42,37,33,0.18)] transition-all duration-300"
                   />
                 </div>

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
-import { PRODUCTS, ProductVariant } from "@/data/products";
+import { PRODUCTS, ProductVariant, PRODUCT_IMAGES } from "@/data/products";
 import { LeafIcon, SparklesIcon } from "./Icons";
 
 interface HeroVisual3DProps {
@@ -266,12 +266,13 @@ export const HeroVisual3D: React.FC<HeroVisual3DProps> = ({
 
           <div className="w-8 h-8 rounded-full bg-white/80 shadow-sm border border-[#2A2521]/10 flex items-center justify-center overflow-hidden">
             <Image
-              src="/images/emblem.png"
+              src={PRODUCT_IMAGES.emblem}
               alt="Urban Vital Emblem"
               width={32}
               height={32}
               className="object-contain"
               priority
+              loading="eager"
             />
           </div>
         </div>
@@ -289,6 +290,7 @@ export const HeroVisual3D: React.FC<HeroVisual3DProps> = ({
             width={280}
             height={280}
             priority
+            loading="eager"
             className="w-full h-full object-contain filter drop-shadow-[0_16px_20px_rgba(42,37,33,0.18)] transition-all duration-300 transform scale-100"
           />
         </div>

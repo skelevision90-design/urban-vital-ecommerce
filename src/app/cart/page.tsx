@@ -146,6 +146,7 @@ export default function CartPage() {
                           alt={item.variant.name}
                           width={90}
                           height={90}
+                          loading="lazy"
                           className="w-full h-full object-contain filter drop-shadow-sm"
                         />
                       </div>

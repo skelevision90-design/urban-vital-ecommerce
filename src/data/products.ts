@@ -1,3 +1,7 @@
+import { PRODUCT_IMAGES } from "./productImages";
+
+export { PRODUCT_IMAGES };
+
 export interface ProductVariant {
   id: string;
   name: string; // SPROUT, GOLD, JUNIOR, CORE
@@ -55,7 +59,7 @@ export const PRODUCTS: ProductVariant[] = [
     description: "Formulated specifically for growing bodies, SPROUT delivers essential vitamins and organic plant bioactives that strengthen daily immunity, support cellular growth, and fuel joyful childhood play.",
     price: 699,
     weight: "Net Wt. 200g",
-    packImage: "/images/sprout.png",
+    packImage: PRODUCT_IMAGES.sprout,
     accentColor: "#E2606B", // --berry
     accentSecondary: "#8CC79B", // --leaf
     accentClass: "sprout",
@@ -103,7 +107,7 @@ export const PRODUCTS: ProductVariant[] = [
     description: "A comforting, golden malt blend crafted with sprouted cereal grains, algae-sourced Calcium, Vitamin K2 (MK-7), and Magnesium to build unbreakable bones and resilient cardiovascular vitality in active kids.",
     price: 749,
     weight: "Net Wt. 200g",
-    packImage: "/images/gold.png",
+    packImage: PRODUCT_IMAGES.gold,
     accentColor: "#C0812F", // --malt
     accentSecondary: "#D9A84E", // --gold
     accentClass: "gold",
@@ -150,7 +154,7 @@ export const PRODUCTS: ProductVariant[] = [
     description: "Formulated for sharp focus, classroom alertness, and boundless joyful energy. Crafted with pure heritage Criollo cocoa beans, vegetarian DHA from microalgae, and active B-Complex vitamins.",
     price: 729,
     weight: "Net Wt. 200g",
-    packImage: "/images/junior.png",
+    packImage: PRODUCT_IMAGES.junior,
     accentColor: "#4A2C1F", // --cocoa
     accentSecondary: "#B4643C", // --copper
     accentClass: "junior",
@@ -197,7 +201,7 @@ export const PRODUCTS: ProductVariant[] = [
     description: "The foundational daily multivitamin powder for every child's breakfast ritual. Infused with aromatic cured vanilla pods, 18 bio-fermented vitamins, and prebiotic oligosaccharides.",
     price: 689,
     weight: "Net Wt. 200g",
-    packImage: "/images/core.png",
+    packImage: PRODUCT_IMAGES.core,
     accentColor: "#E9DABC", // --vanilla
     accentSecondary: "#D9A84E", // --gold
     accentClass: "core",

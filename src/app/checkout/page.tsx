@@ -1012,6 +1012,7 @@ export default function CheckoutPage() {
                         alt={item.variant.name}
                         width={44}
                         height={44}
+                        loading="lazy"
                         className="object-contain"
                       />
                     </div>
